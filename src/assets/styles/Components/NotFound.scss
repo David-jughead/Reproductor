@@ -1,0 +1,37 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.error {
+    color: $blanco;
+    background: linear-gradient($main-color, $secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 250px 30px;
+    min-width: calc(100vh -180px);
+}
+
+.error__main h1 {
+    color: $blanco;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-name: 1s;
+}
